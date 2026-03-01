@@ -419,7 +419,8 @@ class ScanCodeIOClient:
     
     def upload_file(self, project_uuid: str, file_path: str) -> Dict:
         """Upload a file to project"""
-        files = {'upload_file': open(file_path, 'rb')}
+        with open(file_path, 'rb') as f:
+            files = {'upload_file': f}
         headers = {'Authorization': self.headers['Authorization']}
         
         response = requests.post(
@@ -549,7 +550,7 @@ def scan_repository(repo_path: str, project_name: str) -> int:
     
     # Load license policy
     policy_url = os.getenv('LICENSE_POLICY_URL')
-    policy = requests.get(policy_url).json() if policy_url else {}
+    policy = yaml.safe_load(requests.get(policy_url).text) if policy_url else {}
     
     # Initialize client
     client = ScanCodeIOClient(scancodeio_url, scancodeio_key)

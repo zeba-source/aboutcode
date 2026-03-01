@@ -28,6 +28,7 @@ author = "AboutCode.org authors and contributors"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx_design",
     "sphinx.ext.intersphinx",
     "sphinx_reredirects",
     "sphinx_rtd_theme",
