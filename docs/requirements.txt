@@ -1,1 +1,12 @@
+# Documentation build requirements
+# Note: ReadTheDocs installs from setup.cfg [options.extras_require] docs section
+# This file is provided for local development convenience
+
+Sphinx>=4.0
+sphinx-rtd-theme
+sphinx-reredirects
 sphinx-design
+doc8
+sphinx-autobuild
+sphinx-rtd-dark-mode
+sphinx-copybutton

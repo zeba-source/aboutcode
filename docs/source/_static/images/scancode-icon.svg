@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#4A90E2" rx="10"/>
+  <text x="100" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ScanCode</text>
+  <text x="100" y="100" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Toolkit</text>
+  <rect x="60" y="120" width="80" height="10" fill="white" rx="2"/>
+  <rect x="60" y="140" width="60" height="10" fill="white" rx="2"/>
+  <rect x="60" y="160" width="70" height="10" fill="white" rx="2"/>
+</svg>

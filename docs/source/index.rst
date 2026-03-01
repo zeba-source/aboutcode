@@ -25,6 +25,7 @@ Overview
 .. toctree::
    :maxdepth: 3
 
+   index-new-persona-based
    aboutcode-project-overview
 
 ************
